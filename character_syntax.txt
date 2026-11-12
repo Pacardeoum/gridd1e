@@ -1,0 +1,31 @@
+//
+// character_syntax.txt
+//
+// Davin Benson
+// 10/17/19
+// CS301 Project
+//
+brackets -> [] designate unique items
+
+syntax:
+[id] [name] [description] [hp] [mana] [x_pos] [y_pos]
+Example:
+
+2
+0 "Frisk" "A pure good bean" 100 0 5 7
+1 "Skeleman" "Hilariously funny" 1 99 5 8
+
+Breakdown of example:
+
+2 -> This is the NUMBER of characters you are including in the game. DO NOT FORGET THIS. It is required for the engine to properly run.
+
+0 -> identification number. Starts at 0, which designates the player character, increases by 1 for each additional character in the file.
+"Frisk" -> name. begins and ends with a quotation mark character "
+"A pure and good bean" -> description. same syntax as name, but comes after name.
+100 -> hp. The maximum amount of health the character has
+0 -> mana. The maximum amount of mana the character has
+0 -> x_pos. The "x" coordinate of the character
+0 -> y_pos. The "y" coordinate of the character
+note that the coordinate plane starts in the top right, and contains only non-negative integers. This means that positions with greater x values are further down, and those with greater y values are further right in the grid.
+
+This is a list of all characters that are placed on the map.
