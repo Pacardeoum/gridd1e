@@ -1,0 +1,36 @@
+//
+// tile_syntax.txt
+//
+// Davin Benson
+// 10/17/19
+// CS301 Project
+//
+brackets -> [] designate unique items
+
+syntax:
+[id] [name] [description] [hp] [mana] [life] [passable] [item_passable] [conditional_effect] [effect_type] [key_item]
+Example:
+
+4
+0 "Goal" "The Finish Line" 0 0 1 1 0 0 x -1
+1 "Land" "Very walkable" 0 0 1 1 0 0 x -1
+2 "Void" "Cannot get here" 0 0 1 0 0 0 x -1
+3 "Lava" "It burns so good" 0 0 0 1 0 0 d -1
+
+Breakdown of example:
+
+4 -> This is the NUMBER of distinct tiles you are including in the game. DO NOT FORGET THIS. It is required for the engine to properly run.
+
+0 -> identification number. Starts at 0, which designates the goal tile, increases by 1 for each additional character in the file.
+"Goal" -> name. begins and ends with a quotation mark character "
+"The Finish Line" -> description. same syntax as name, but comes after name.
+0 -> hp. the amount that the health points of the character that moves onto the tile should change by.
+0 -> mana. the amount that the mana points of the character that moves onto the tile should change by.
+1 -> life. If the tile should kill a character when stepped on, set this to 0, otherwise 1
+1 -> passable. if the tile is EVER passable, even if the character must have an item to pass onto the tile, this should be a 1
+0 -> item_passable. this should be 1 only if an item is required to pass onto this tile
+0 -> conditional_effect. this should be a 1 if there is an effect of the tile that is dependent on an item the character may have, such as thick or insulated boots to pass over hot coals unburned.
+x -> effect_type. this signifies the type of effect that takes place. h for modifying the character's health, m for modifying the character's mana, d for killing the character.
+-1 -> key_item. The ID of the key item, that being the item that is needed to either pass onto this tile, so a key for a locked gate, or the item needed to avoid or change in some way other effects, such as the aforementioned boots.
+
+This is a list of the TYPE of tiles that the map will be made up of.
