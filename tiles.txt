@@ -1,0 +1,6 @@
+4
+0 Goal" The Finish Line" 0 0 1 1 0 0 x -1
+1 Land" Very walkable" 0 0 1 1 0 0 x -1
+2 Void" Cannot get here" 0 0 1 0 0 0 x -1
+3 Lava" It burns so good" 0 0 0 1 0 0 d -1
+
