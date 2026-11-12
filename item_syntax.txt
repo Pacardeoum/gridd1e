@@ -1,0 +1,28 @@
+//
+// item_syntax.txt
+//
+// Davin Benson
+// 10/16/19
+// CS301 Project
+
+brackets -> [] designate unique items
+
+syntax:
+[id] [name] [description] [consumable] [type] [hp] [mana] [life]
+Example:
+
+1
+0 "Small health potion" "A tiny flask of bubbling red liquid" 1 h 5 0 1
+
+Breakdown of example:
+
+1 -> This is the NUMBER of distinct items you are including in the game. DO NOT FORGET THIS. It is required for the engine to properly run.
+
+0 -> identification number. Starts at 0, increases by 1 for each additional item in the file
+"Small health potion" -> name. begins and ends with a quotation mark character "
+"A tiny flask of bulling red liquid" -> description. same syntax as name, but comes after name.
+1 -> consumable. If the item is consumable, meaning you can use it in a way that depletes it, be that by literally consuming it, like food or drink, or breaking it, like a rusty key that can only open one lock before breaking. 1 is true, 0 is false.
+h -> type. Indicates what type of effect the (consumable) item has. h for health, meaning it has a positive or egative effect on health, m for mana, meaning it has a positive or negative effect on mana, and l for life, meaning it will instantly kill the character if consumed.
+5 -> hp. The quantity the item changes the characters health points by. in this case, it "heals" the character for 5 hp. If you put a negative number, it will "harm" the character for that amount when consumed.
+0 -> mana. Same idea as hp, but relating to the effect the item will have on a characters mana when consumed.
+0 -> life. Similar to hp and mana, but is instead a binary option of 1, meaning it will not kill the character when consumed, or 0, meaning it will kill the character when consumed.
