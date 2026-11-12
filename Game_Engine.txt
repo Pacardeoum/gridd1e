@@ -1,0 +1,38 @@
+Project Ideas
+- Text-based game engine
+	- Support a tile map, movement, inventory, player information (health, mana, status), encounters, dialogue tree, 
+	- Tile map represented by a matrix, most basic form - 0 empty, 1 land. Additional values can be added for different kinds of tiles. Water, deep water, lava, poison, rough terrain, etc
+		- Can make a look-up table for the kind of terrain each value represents
+	- Tile map is utilized to check bounds of movement
+	
+	- Items
+		- Keys that are needed to access areas
+		- Breathing mask to pass through gas
+		- Lava shoes to pass over lava
+		- Map to show player the map (can access a showMap() function)
+		- Items to replenish health/stamina/mana/etc
+	- Encounters
+		- Enemy stats
+		- Battle system
+	- Movement
+		- tile based movement, likely restricted to north south east west
+	- Inventory
+		- Houses Items, accessed by a command
+	- Stats
+		- Player Object that contains the player's statistics, can be viewed by a command
+	- Dialogue
+		- Dialogue trees, literally using tree structures to traverse
+	- 
+	
+	
+- Objects
+		- Map
+			- read in a map from file, storing in a 2d array
+			- Access each tile's 'type'
+		
+		- Player
+			-
+		
+		- Inventory
+		
+		- 
